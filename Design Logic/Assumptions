@@ -1,0 +1,10 @@
+Assumptions Made
+
+1. The maximum number of subscriptions a user can have is 100
+2. The maximum lenght for the subscription name is 50 chars
+3. The program does not save user data (e.g., subscriptions, costs, etc.) after the program ends or the terminal is closed. 
+   All user inputs are stored temporarily during the session, and once the program is exited, the data is lost. For data 
+   persistence across sessions, additional features like file storage or database integration would need to be implemented.
+4. List of subscriptions will be displayed in the order they were added
+5. Each subscription has a unique name and cost
+6. Cost is a float
