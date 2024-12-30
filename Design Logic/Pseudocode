@@ -1,0 +1,37 @@
+START
+    Initialize subscription system
+    Loop until the user exits
+        Display menu to the user
+        Get user's choice (Ensure valid input)
+        Switch based on choice:
+            Case 1: Add Subscription
+                If subscription count is less than MAX_SUBSCRIPTIONS
+                    Get subscription name and cost from the user (Ensure name is unique and name is max 50 chars)
+                    Add subscription to the list
+                Else
+                    Display "Subscription limit reached"
+            Case 2: View Subscriptions
+                If there are subscriptions
+                    Display all subscriptions
+                Else
+                    Display "No subscriptions to view"
+            Case 3: Remove Subscription
+                If there are subscriptions
+                    Ask user for subscription number
+                    Validate the number and remove the subscription
+                Else
+                    Display "No subscriptions to remove"
+            Case 4: Update Subscription
+                If there are subscriptions
+                    Ask user for subscription number
+                    Get new name and cost, and update the subscription
+                Else
+                    Display "No subscriptions to update"
+            Case 5: Exit
+                Print "Exiting program"
+                End program
+            Default:
+                Print "Invalid choice"
+        End Switch
+    End Loop
+END
